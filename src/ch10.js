@@ -23,6 +23,7 @@ run(() => {
 
 run(() => {
     // 函数的 name
+    // name 只读， 不能赋值
     function foo() {}
     let bar = foo;
     let baz = function () {};
@@ -45,7 +46,7 @@ run(() => {
 
     // 如果使用了 bind
     console.log(foo.bind(dog).name); // bound foo
-}, true);
+}, false);
 
 run(() => {
     function foo(a, b) {
