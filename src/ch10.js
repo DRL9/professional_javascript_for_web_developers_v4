@@ -46,7 +46,7 @@ run(() => {
 
     // 如果使用了 bind
     console.log(foo.bind(dog).name); // bound foo
-}, false);
+}, true);
 
 run(() => {
     function foo(a, b) {
